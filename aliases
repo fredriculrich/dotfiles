@@ -19,22 +19,14 @@ alias grb="git rebase"
 alias grbo="git rebase origin/master"
 
 # Dev aliases
-alias dud="dev down && dev up"
+alias dud="restart"
 alias du="update"
-alias dd="dev down"
-alias dcs="dev cd shopify"
-alias dcp="dev cd partners"
-alias dci="dev cd identity"
 alias dt="bin/test"
 alias dtb="bin/test --include-branch-commits"
 alias ds="bin/style"
 alias dsb="bin/style --include-branch-commits"
-alias dty="bin/srb typecheck"
-alias dtg="bin/tapicoa dsl"
-
-# Partners aliases
-alias dps="DISABLE_SHOPIFY_INTERNAL_API_INTERCEPTOR=1 dev server"
-alias dpc="DISABLE_SHOPIFY_INTERNAL_API_INTERCEPTOR=1 dev console"
+alias dtc="bin/srb typecheck"
+alias dtcg="bin/tapioca dsl"
 
 # Shopify CLI Aliases
 alias shopifyl="~/src/github.com/Shopify/shopify-app-cli/bin/shopify"
