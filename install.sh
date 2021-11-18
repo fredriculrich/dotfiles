@@ -9,6 +9,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Install ZSH Plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# Install Shopify CLI
+gem install shopify-cli
+
+# Link all files to the home directory
 for FILE in `ls ~/dotfiles` ; do 
   ln -sf ~/dotfiles/$FILE ~/.$FILE
 done

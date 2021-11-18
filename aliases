@@ -28,6 +28,9 @@ alias dsb="bin/style --include-branch-commits"
 alias dtc="bin/srb typecheck"
 alias dtcg="bin/tapioca dsl"
 
+# Partners aliases
+alias pu="sh -c ~/.partners_update.sh"
+
 # Shopify CLI Aliases
 alias shopifyl="~/src/github.com/Shopify/shopify-app-cli/bin/shopify"
 alias spll="SHOPIFY_APP_CLI_LOCAL_PARTNERS=1 ~/src/github.com/Shopify/shopify-app-cli/bin/shopify"
