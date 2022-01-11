@@ -16,7 +16,7 @@ alias gss="git stash save"
 alias gsl="git stash show stash^{/$*} -p"
 alias gsa="!f() { git stash apply stash^{/$*}; }; f"
 alias grb="git rebase"
-alias grbo="git rebase origin/master"
+alias grbo="git rebase origin/main"
 
 # Dev aliases
 alias dud="restart"
@@ -28,8 +28,12 @@ alias dsb="bin/style --include-branch-commits"
 alias dtc="bin/srb typecheck"
 alias dtcg="bin/tapioca dsl"
 
-# Partners aliases
-alias pu="sh -c ~/.partners_update.sh"
+# Server Aliases
+alias sc="systemctl"
+alias jc="journalctl"
+alias spf="systemctl list-units --failed"
+alias sps="systemctl status $*"
+alias spr="systemctl restart $*"
 
 # Shopify CLI Aliases
 alias shopifyl="~/src/github.com/Shopify/shopify-app-cli/bin/shopify"
