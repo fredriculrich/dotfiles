@@ -27,13 +27,17 @@ alias ds="bin/style"
 alias dsb="bin/style --include-branch-commits"
 alias dtc="bin/srb typecheck"
 alias dtcg="bin/tapioca dsl"
+alias drc="bin/rails console"
 
 # Server Aliases
 alias sc="systemctl"
+alias scf="systemctl list-units --failed"
+alias scst="systemctl | grep \"start\""
+alias scs="systemctl status $*"
+alias scr="systemctl restart $*"
+
 alias jc="journalctl"
-alias spf="systemctl list-units --failed"
-alias sps="systemctl status $*"
-alias spr="systemctl restart $*"
+alias jcl="journalctl --unit=$*"
 
 # Shopify CLI Aliases
 alias shopifyl="~/src/github.com/Shopify/shopify-app-cli/bin/shopify"
