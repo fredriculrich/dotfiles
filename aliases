@@ -37,7 +37,7 @@ alias scs="systemctl status $*"
 alias scr="systemctl restart $*"
 
 alias jc="journalctl"
-alias jcl="journalctl --unit=$*"
+alias jct="journalctl -xfu $*"
 
 # Shopify CLI Aliases
 alias shopifyl="~/src/github.com/Shopify/shopify-app-cli/bin/shopify"
