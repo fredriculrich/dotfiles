@@ -17,29 +17,3 @@ alias gsl="git stash show stash^{/$*} -p"
 alias gsa="!f() { git stash apply stash^{/$*}; }; f"
 alias grb="git rebase"
 alias grbo="git rebase origin/main"
-
-# Dev aliases
-alias dud="restart"
-alias du="update"
-alias dt="bin/test"
-alias dtb="bin/test --include-branch-commits"
-alias ds="bin/style"
-alias dsb="bin/style --include-branch-commits"
-alias dtc="bin/srb typecheck"
-alias dtcg="bin/tapioca dsl"
-alias drc="bin/rails console"
-
-# Server Aliases
-alias sc="systemctl"
-alias scf="systemctl list-units --failed"
-alias scst="systemctl | grep \"start\""
-alias scs="systemctl status $*"
-alias scr="systemctl restart $*"
-
-alias jc="journalctl"
-alias jct="journalctl -xfu $*"
-
-# Shopify CLI Aliases
-alias shopifyl="~/src/github.com/Shopify/shopify-app-cli/bin/shopify"
-alias spll="SHOPIFY_APP_CLI_LOCAL_PARTNERS=1 ~/src/github.com/Shopify/shopify-app-cli/bin/shopify"
-alias spl="SHOPIFY_APP_CLI_LOCAL_PARTNERS=1 shopify"

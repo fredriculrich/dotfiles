@@ -9,10 +9,15 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Install ZSH Plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-# Install Shopify CLI
-# gem install shopify-cli
+# Script Parameters
+LOCATION="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+if [ "$SPIN" ]; then SCRIPT_MODE="spin"; else SCRIPT_MODE="local"; fi
 
-# Link all files to the home directory
-for FILE in `ls ~/dotfiles` ; do 
-  ln -sf ~/dotfiles/$FILE ~/.$FILE
+# Link default files to home directory
+ln -sf $LOCATION/aliases ~/.aliases
+ln -sf $LOCATION/zshrc ~/.zshrc
+
+# Link appropriate script mode files to home directory
+for FILE in `ls ${LOCATION}/${SCRIPT_MODE}` ; do 
+  ln -sf $LOCATION/${SCRIPT_MODE}/$FILE ~/.$FILE
 done
