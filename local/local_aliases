@@ -10,8 +10,12 @@ alias dtcg="bin/tapioca dsl"
 alias drc="dev console"
 
 # Spin Helpers
+alias spc="spin create $*"
 alias spce="spin create partners"
 alias sps="spin shell"
+alias spl="spin list"
+alias spd="spin destroy $*"
+alias spda="spin destroy --all"
 alias spo="spin-open $*"
 
 # Shopify CLI Aliases
