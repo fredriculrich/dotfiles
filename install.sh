@@ -9,6 +9,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Install ZSH Plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# Install iTerm2 Integration
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+
 # Script Parameters
 LOCATION="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 if [ "$SPIN" ]; then SCRIPT_MODE="spin"; else SCRIPT_MODE="local"; fi

@@ -33,6 +33,8 @@ source ~/.bash_profile
 # Shopify spin-specific config
 if [ $SPIN ]; then
   export TZ=/usr/share/zoneinfo/America/Toronto
+  
+  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 fi
 
 # Local Shopify specific config
