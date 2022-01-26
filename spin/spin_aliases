@@ -18,3 +18,6 @@ alias scr="systemctl restart $*"
 
 alias jc="journalctl"
 alias jct="journalctl -xfu $*"
+
+# SQL aliases
+alias sqlace = echo "open \"mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@${SPIN_INSTANCE_FQDN}:${MYSQL_PORT}\" -a \"Sequel Ace\""
