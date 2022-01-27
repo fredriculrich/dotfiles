@@ -21,3 +21,7 @@ alias jct="journalctl -xfu $*"
 
 # SQL aliases
 alias sqlace="echo \"open 'mysql://\$MYSQL_USER:\$MYSQL_PASSWORD@\$SPIN_INSTANCE_FQDN:\$MYSQL_PORT' -a 'Sequel Ace'\""
+
+# Bootstrap aliases
+alias eab="bin/rails extensions:apps:bootstrap"
+alias gcauth="gcloud auth application-default login --no-launch-browser"

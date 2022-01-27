@@ -20,5 +20,5 @@ alias spo="spin-open $*"
 
 # Shopify CLI Aliases
 alias shopifyl="~/src/github.com/Shopify/shopify-cli/bin/shopify"
-alias shopifyls="USE_SPIN=1 ~/src/github.com/Shopify/shopify-cli/bin/shopify"
-alias shopifys="USE_SPIN=1 shopify"
+alias shopifyls="SPIN=1 INFER_SPIN=1 SSL_VERIFY_NONE=1 ~/src/github.com/Shopify/shopify-cli/bin/shopify"
+alias shopifys="SPIN=1 INFER_SPIN=1 SSL_VERIFY_NONE=1 shopify"
